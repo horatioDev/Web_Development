@@ -1,0 +1,37 @@
+// This is a SASS: Syntactically Awesome Style Sheets file  
+
+// SASS file has to be compiled to CSS 
+
+// Variables: begins with $ 
+$error: red;
+$warn: orange;
+$success: green;
+
+// Below shows how a generic message will display. A placeholder class is a special type of class that only prints when it is extended.
+%message {
+  border: 1px solid black;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px;
+  padding: 20px;
+}
+
+// Success Message
+.success {
+  // @extend lets you inherit a set of CSS properties from one selector to another
+  @extend %message;
+  background-color: $success;
+}
+
+// Waning Message
+.warning {
+  @extend %message;
+  background-color: $warn;
+}
+
+// Error Message
+.error {
+  @extend %message;
+  background-color: $error;
+}

@@ -1,0 +1,18 @@
+// This is a SASS: Syntactically Awesome Style Sheets file 
+
+// SASS file has to be compiled to CSS
+
+// Variables: begins with $
+$color: red;
+
+
+// variables.html
+ul {
+  font-size: 14px;
+  color: $color;
+}
+
+ol  {
+  font-size: 18px;
+  color: $color;
+}

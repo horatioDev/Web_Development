@@ -1,0 +1,144 @@
+/* 
+File for  External CSS
+Specificity: inline, id, class, type 
+Responsive Design: viewport, Media Queries, Flexbox, Grid
+*/
+
+/* style.html */
+h3 {
+  color: green;
+  text-align: center;
+}
+
+#p1 {
+  color: red;
+}
+
+.p-text {
+  color: blue;
+}
+
+/* size.html */
+div.size {
+  background-color: orange;
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+  padding: 20px;
+}
+
+/* font.html */
+div.font {
+  border: 3px solid black;
+  font-family: Arial, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* table.html */
+table {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+/* descendant.html */
+ol > li {
+  color: red;
+}
+
+ul > li {
+  color: blue;
+}
+
+ul + li {
+  color: green
+}
+
+/* attribute.html */
+a {
+  color:  red;
+}
+
+a[href="https://facebook.com"] {
+  color: blue;
+}
+
+a[href="https://amazon.com"] {
+  color: green;
+}
+
+/* hover.html */
+button {
+  width: 200px;
+  height: 50px;
+  font-size: 24px;
+  background-color: red;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: green;
+}
+
+/* responsive.html: Media Queries */
+@media (min-width: 600px) {
+  /* Style is applied to body if screen size > 600px */
+  #responsive-demo {
+    background-color: red;
+  }
+}
+
+@media (max-width: 599px) {
+  /* Style is applied to body if screen size < 599px */
+  #responsive-demo {
+    background-color: blue;
+  }
+}
+
+/* flexbox.html: Flexbox */
+#container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#container > div {
+  background-color: red;
+  font-size: 20px;
+  margin: 20px;
+  padding: 20px;
+  width: 200px;
+}
+
+/* grid.html: Grid */
+#grid {
+  background-color: red;
+  display: grid;
+  padding: 20px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-columns: 200px 200px auto;
+}
+
+.grid-item{
+  background-color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* bootstrap.html: Bootstrap - CSS Library */
+.row > div {
+  padding: 20px;
+  background-color: blue;
+  border: 2px solid green;
+  color: red;
+  font-size: 20px;
+  text-align: center;
+}
+

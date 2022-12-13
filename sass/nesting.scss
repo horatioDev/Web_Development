@@ -1,0 +1,22 @@
+// This is a SASS: Syntactically Awesome Style Sheets file  
+
+// SASS file has to be compiled to CSS 
+
+// Variables: begins with $ 
+$color: red;
+
+// nesting.html
+div {
+  // Font size of elements inside the div
+  font-size: 18px;
+
+  // Color of paragraphs inside the div
+  p {
+    color:  red;
+  }
+
+  // Color of ul's inside the div
+  ul {
+    color: blue;
+  }
+}
