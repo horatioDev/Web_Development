@@ -107,4 +107,16 @@
     Already up to date.
     ```
 
+  - __git pull:__ command shows commit logs
+
+    Example:
+    ```
+    $ git log
+    commit ff274dc51f3e254023f5222d0c16ba2bf88cfd18 (HEAD -> main, origin/main)
+    Author: github_username <example@email.com>
+    Date:   Tue Dec 13 16:22:05 2022 -0500
+
+        Updated index.html
+    ```
+
 ## Handling Merge Conflicts
