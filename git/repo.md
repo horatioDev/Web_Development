@@ -106,3 +106,5 @@
     $ git pull
     Already up to date.
     ```
+
+## Handling Merge Conflicts
