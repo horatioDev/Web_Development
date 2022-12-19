@@ -7,8 +7,8 @@ from django.http import HttpResponse
 
 '''
 Function view: 
-  HttpResponse('str') returns string
-  render(request, 'app/index.html') returns a template
+  - HttpResponse('str') returns string
+  - render(request, 'app/index.html') returns a template
 '''
 def index(request):
   # return HttpResponse('Hello, Django')
