@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- JS Packages / React Libraries -->
+
+        <!-- React pkg: used to define the components and behavior -->
+        <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+
+        <!-- React-DOM pkg: used to insert React components into DOM -->
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+
+        <!-- Babel pkg: used to translate JSX code into basic JS  -->
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+        <title>Hello</title>
+
+    </head>
+    <body>
+        <!-- Define div w/ id app for react to render application in -->
+        <div id="app"></div>
+
+        <!-- Let the browser know to translate code to JSX -->
+        <script type="text/babel">
+            // Define React function component
+            function App() {
+                // Return component
+                return (
+                    // Component to be rendered into div w/ id app
+                    <div>
+                        Hello!
+                    </div>
+                );
+            }
+
+            // Render Component into HTML page
+            ReactDOM.render(<App />, document.querySelector("#app"));
+        </script>
+    </body>
+</html>
