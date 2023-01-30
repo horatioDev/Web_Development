@@ -15,13 +15,18 @@ class Airport(models.Model):
 # Flight
 class Flight(models.Model):
   # Reference Airport table w/ FK deletes if Airport deletes
-  origin = models.ForeignKey(Airport, on_delete=models.CASCADE, related_name='departure')
+  origin = models.ForeignKey(Airport, on_delete=models.CASCADE, related_name='departures')
   destination = models.ForeignKey(Airport, on_delete=models.CASCADE, related_name='arrivals')
   duration = models.IntegerField()
 
   # Turn data returned to formatted string
   def __str__(self) -> str:
     return f'{ self.id }: { self.origin } to { self.destination }'
+     
+
+  # Check if flight is valid
+  def is_valid_flight(self):
+    return self.origin != self.destination and self.duration > 0
 
 # Passenger
 class Passenger(models.Model):
