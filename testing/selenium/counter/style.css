@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#counter_app {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+h1 {
+  font-size: 90px;
+  text-align: center;
+}
+
+button {
+  border-radius: 4px;
+  width: 60px;
+  height: 40px;
+  text-align: center;
+  margin: 8px auto;
+}
+
+button#increase {
+  background-color: #0f0;
+}
+
+button#decrease {
+  background-color: #f00;
+}
