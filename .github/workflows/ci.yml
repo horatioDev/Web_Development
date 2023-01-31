@@ -11,16 +11,3 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
-
-# name: Testing
-# on: push
-
-# jobs:
-#   test_project:
-#     runs-on: ubuntu-latest
-#     steps:
-#     - uses: actions/checkout@v2
-#     - name: Run Django unit tests
-#       run:
-#         pip3 install --user django
-#         py manage.py tests
